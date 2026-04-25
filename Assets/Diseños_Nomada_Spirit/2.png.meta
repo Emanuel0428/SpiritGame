@@ -1,25 +1,22 @@
 fileFormatVersion: 2
-guid: fd85ee62093f4844380ecf110bedbc12
+guid: 921a47500d784424c902f9ba75dc1943
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7022967926224140944
-    second: nomada_idle_0
+      213: 6937817954938267909
+    second: 2_0
   - first:
-      213: 1317470415625867659
-    second: nomada_idle_1
+      213: 3191122964850554743
+    second: 2_1
   - first:
-      213: 4780242423592241721
-    second: nomada_idle_2
+      213: 5382512944479897801
+    second: 2_2
   - first:
-      213: -7904011821993883425
-    second: nomada_idle_3
+      213: -5515383189529662604
+    second: 2_3
   - first:
-      213: -7303475607771571153
-    second: nomada_idle_4
-  - first:
-      213: 7503802213017546711
-    second: nomada_idle_5
+      213: -3926759211464601419
+    second: 2_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -141,89 +138,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nomada_idle_0
+      name: 2_0
       rect:
         serializedVersion: 2
-        x: 95
-        y: 343
-        width: 398
-        height: 655
+        x: 43
+        y: 249
+        width: 281
+        height: 462
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 075c27061e7698e90800000000000000
-      internalID: -7022967926224140944
+      spriteID: 5092c600ca4184060800000000000000
+      internalID: 6937817954938267909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nomada_idle_3
+      name: 2_1
       rect:
         serializedVersion: 2
-        x: 1508
-        y: 343
-        width: 419
-        height: 655
+        x: 366
+        y: 249
+        width: 343
+        height: 462
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fd80199002f4f4290800000000000000
-      internalID: -7904011821993883425
+      spriteID: 7773282ed65294c20800000000000000
+      internalID: 3191122964850554743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nomada_idle_4
+      name: 2_2
       rect:
         serializedVersion: 2
-        x: 1947
-        y: 343
-        width: 387
-        height: 655
+        x: 787
+        y: 249
+        width: 281
+        height: 462
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f2c9b0551a7d4aa90800000000000000
-      internalID: -7303475607771571153
+      spriteID: 9c88aa6510782ba40800000000000000
+      internalID: 5382512944479897801
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nomada_idle_5
+      name: 2_3
       rect:
         serializedVersion: 2
-        x: 2354
-        y: 343
-        width: 396
-        height: 655
+        x: 1125
+        y: 249
+        width: 335
+        height: 462
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7df63bb1b5cd22860800000000000000
-      internalID: 7503802213017546711
+      spriteID: 47b6cebf53c6573b0800000000000000
+      internalID: -5515383189529662604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_4
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 243
+        width: 329
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b0d8225d495189c0800000000000000
+      internalID: -3926759211464601419
       vertices: []
       indices: 
       edges: []
@@ -232,7 +251,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 47493bf5f1c00dc4ab09ca4ec1ede6a1
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -242,13 +261,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      nomada_idle_0: -7022967926224140944
-      nomada_idle_1: 1317470415625867659
-      nomada_idle_2: 4780242423592241721
-      nomada_idle_3: -7904011821993883425
-      nomada_idle_4: -7303475607771571153
-      nomada_idle_5: 7503802213017546711
-      nomada_idle_6: -148492319
+      2_0: 6937817954938267909
+      2_1: 3191122964850554743
+      2_2: 5382512944479897801
+      2_3: -5515383189529662604
+      2_4: -3926759211464601419
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

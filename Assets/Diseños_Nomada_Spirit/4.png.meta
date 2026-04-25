@@ -1,22 +1,28 @@
 fileFormatVersion: 2
-guid: db7a186e58db86d438731e42cd1a675b
+guid: ff7ffd900421cd747ab54d56bab52e17
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3813530135234978231
-    second: nomada_walking_0
+      213: -4178046375966092550
+    second: 4_0
   - first:
-      213: -1609850484252558848
-    second: nomada_walking_1
+      213: 8982099749623107299
+    second: 4_1
   - first:
-      213: -5743030416029556840
-    second: nomada_walking_2
+      213: -2214249495721929474
+    second: 4_2
   - first:
-      213: 3420867133200031190
-    second: nomada_walking_3
+      213: 7945056504642708236
+    second: 4_3
   - first:
-      213: 6475361868072336450
-    second: nomada_walking_4
+      213: -10500422234371694
+    second: 4_4
+  - first:
+      213: -4683111340605770916
+    second: 4_5
+  - first:
+      213: -5933289837275991918
+    second: 4_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -138,13 +144,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nomada_walking_0
+      name: 4_0
       rect:
         serializedVersion: 2
-        x: 62
-        y: 340
-        width: 420
-        height: 676
+        x: 8
+        y: 235
+        width: 242
+        height: 422
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7b1adeaf3716ce430800000000000000
-      internalID: 3813530135234978231
+      spriteID: af2de6115f89406c0800000000000000
+      internalID: -4178046375966092550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nomada_walking_1
+      name: 4_1
       rect:
         serializedVersion: 2
-        x: 535
-        y: 340
-        width: 507
-        height: 676
+        x: 291
+        y: 232
+        width: 233
+        height: 502
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 00ab2a09389a8a9e0800000000000000
-      internalID: -1609850484252558848
+      spriteID: 3ee09611224d6ac70800000000000000
+      internalID: 8982099749623107299
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nomada_walking_2
+      name: 4_2
       rect:
         serializedVersion: 2
-        x: 1151
-        y: 340
-        width: 419
-        height: 676
+        x: 565
+        y: 381
+        width: 227
+        height: 491
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89f5b46b348ac40b0800000000000000
-      internalID: -5743030416029556840
+      spriteID: ef41863b0d76541e0800000000000000
+      internalID: -2214249495721929474
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nomada_walking_3
+      name: 4_3
       rect:
         serializedVersion: 2
-        x: 1651
-        y: 340
-        width: 494
-        height: 676
+        x: 835
+        y: 513
+        width: 276
+        height: 461
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,20 +225,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6dd523a788c597f20800000000000000
-      internalID: 3420867133200031190
+      spriteID: c03a2a7dbc2824e60800000000000000
+      internalID: 7945056504642708236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nomada_walking_4
+      name: 4_4
       rect:
         serializedVersion: 2
-        x: 2222
-        y: 343
-        width: 486
-        height: 673
+        x: 1191
+        y: 277
+        width: 243
+        height: 516
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,8 +247,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 24cbf82af4b1dd950800000000000000
-      internalID: 6475361868072336450
+      spriteID: 2998abeebe1badff0800000000000000
+      internalID: -10500422234371694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_5
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 238
+        width: 275
+        height: 398
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c53f6934c0f320fb0800000000000000
+      internalID: -4683111340605770916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_6
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 294
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 290bab33458b8ada0800000000000000
+      internalID: -5933289837275991918
       vertices: []
       indices: 
       edges: []
@@ -251,7 +301,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 22743a3574d6cc8429bc1e0539f06734
+    spriteID: cdb1a7eda3f3f1d4894591f95e6b1b24
     internalID: 0
     vertices: []
     indices: 
@@ -261,11 +311,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      nomada_walking_0: 3813530135234978231
-      nomada_walking_1: -1609850484252558848
-      nomada_walking_2: -5743030416029556840
-      nomada_walking_3: 3420867133200031190
-      nomada_walking_4: 6475361868072336450
+      4_0: -4178046375966092550
+      4_1: 8982099749623107299
+      4_2: -2214249495721929474
+      4_3: 7945056504642708236
+      4_4: -10500422234371694
+      4_5: -4683111340605770916
+      4_6: -5933289837275991918
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
