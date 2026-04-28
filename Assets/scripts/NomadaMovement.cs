@@ -27,11 +27,13 @@ public class NomadaMovement : MonoBehaviour
     private bool isDashing = false;
     private float dashTimer = 0f;
     private float dashDirection = 1f;
+    private Vector3 originalScale;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        originalScale = transform.localScale;
     }
 
     void Update()
@@ -77,13 +79,13 @@ public class NomadaMovement : MonoBehaviour
         {
             horizontal = -1f;
             dashDirection = -1f;
-            transform.localScale = new Vector3(-0.05926f, 0.05643f, 0.05f);
+            transform.localScale = new Vector3(-Mathf.Abs(originalScale.x), originalScale.y, originalScale.z);
         }
         else if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed)
         {
             horizontal = 1f;
             dashDirection = 1f;
-            transform.localScale = new Vector3(0.05926f, 0.05643f, 0.05f);
+            transform.localScale = new Vector3(Mathf.Abs(originalScale.x), originalScale.y, originalScale.z);
         }
 
         animator.SetBool("running", horizontal != 0f);
