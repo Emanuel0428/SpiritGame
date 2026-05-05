@@ -14,13 +14,18 @@ public class HealthUI : MonoBehaviour
     [SerializeField] private float heartSpacing = 50f;
     [SerializeField] private float heartSize = 45f;
 
+    [Header("Mobile Settings")]
+    [SerializeField] private bool forceMobileMode = false;     // Forzar modo móvil en el editor
+    [SerializeField] private float mobileHeartSize = 80f;      // Tamaño más grande para móvil
+    [SerializeField] private float mobileHeartSpacing = 90f;   // Espaciado más grande para móvil
+
     private Image[] heartImages;
     private PlayerHealth playerHealth;
 
     private void Start()
     {
         // Buscar el PlayerHealth en la escena
-        playerHealth = FindObjectOfType<PlayerHealth>();
+        playerHealth = FindAnyObjectByType<PlayerHealth>();
         
         if (playerHealth == null)
         {
@@ -43,6 +48,17 @@ public class HealthUI : MonoBehaviour
         int maxHealth = playerHealth.GetMaxHealth();
         int numberOfHearts = Mathf.CeilToInt(maxHealth / 2f); // 3 corazones para 6 puntos de vida
 
+        // Detectar si estamos en móvil y ajustar tamaños
+        float currentHeartSize = heartSize;
+        float currentHeartSpacing = heartSpacing;
+
+        if (IsMobileDevice())
+        {
+            currentHeartSize = mobileHeartSize;
+            currentHeartSpacing = mobileHeartSpacing;
+            Debug.Log("Dispositivo móvil detectado - usando tamaño grande para corazones");
+        }
+
         heartImages = new Image[numberOfHearts];
 
         for (int i = 0; i < numberOfHearts; i++)
@@ -63,8 +79,8 @@ public class HealthUI : MonoBehaviour
 
             // Configurar la posición y tamaño
             RectTransform rectTransform = heart.GetComponent<RectTransform>();
-            rectTransform.anchoredPosition = new Vector2(i * heartSpacing, 0);
-            rectTransform.sizeDelta = new Vector2(heartSize, heartSize);
+            rectTransform.anchoredPosition = new Vector2(i * currentHeartSpacing, 0);
+            rectTransform.sizeDelta = new Vector2(currentHeartSize, currentHeartSize);
 
             // Guardar la referencia al Image
             heartImages[i] = heart.GetComponent<Image>();
@@ -105,4 +121,47 @@ public class HealthUI : MonoBehaviour
             playerHealth.OnHealthChanged.RemoveListener(UpdateHearts);
         }
     }
+
+    /// <summary>
+    /// Detecta si el juego se está ejecutando en un dispositivo móvil
+    /// </summary>
+    private bool IsMobileDevice()
+    {
+        #if UNITY_EDITOR
+        // En el editor, SOLO usar el checkbox forceMobileMode
+        return forceMobileMode;
+        #else
+        // En build real, detectar la plataforma automáticamente
+        return Application.platform == RuntimePlatform.Android ||
+               Application.platform == RuntimePlatform.IPhonePlayer;
+        #endif
+    }
+
+    #if UNITY_EDITOR
+    // Método para actualizar en el editor cuando cambias valores
+    private void OnValidate()
+    {
+        // Solo ejecutar si estamos en Play Mode y los corazones ya están creados
+        if (Application.isPlaying && heartImages != null && heartImages.Length > 0)
+        {
+            UpdateHeartSizes();
+        }
+    }
+
+    private void UpdateHeartSizes()
+    {
+        float currentHeartSize = IsMobileDevice() ? mobileHeartSize : heartSize;
+        float currentHeartSpacing = IsMobileDevice() ? mobileHeartSpacing : heartSpacing;
+
+        for (int i = 0; i < heartImages.Length; i++)
+        {
+            if (heartImages[i] != null)
+            {
+                RectTransform rectTransform = heartImages[i].GetComponent<RectTransform>();
+                rectTransform.anchoredPosition = new Vector2(i * currentHeartSpacing, 0);
+                rectTransform.sizeDelta = new Vector2(currentHeartSize, currentHeartSize);
+            }
+        }
+    }
+    #endif
 }
